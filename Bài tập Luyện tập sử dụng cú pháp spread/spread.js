@@ -31,17 +31,19 @@
 // replace(testArray, 2, 4, array)
 // console.log(testArray)
 // spread slice
-function copyReplace(array, from, to, elements) {
-
-    return [...array.slice(0, from), ...elements, ...array.slice(to)]
-}
-// spread splice
 // function copyReplace(array, from, to, elements) {
-//     array.splice(from,to - from ,...elements)
-//     return array
-// }
 //
-console.log(copyReplace([1, 2, 100, 200, 6], 2, 4, [3, 4, 5]))
+//     return [...array.slice(0, from), ...elements, ...array.slice(to)]
+// }
+// spread splice
+function copyReplace(array, from, to, elements) {
+    array.splice(from,to - from ,...elements)
+    return array
+}
+let array = [1, 2, 100, 200, 6]
+let e = [3, 4, 5]
+copyReplace(array,2,4,e)
+console.log(array)
 let customerOrder = []
 
 function recordOrders(time,...birds) {
