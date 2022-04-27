@@ -1,15 +1,15 @@
-var sum = 1;
+var sum = 0;
 var array = [];
-function getFibonacci() {
-    for (var i = 1; i < 100; i++) {
-        sum += i;
-        array.push(sum);
-    }
+var i = 0;
+function fibo(a) {
+    if (a <= 1)
+        return 1;
+    return fibo(a - 1) + fibo(a - 2);
 }
-function sumFibonacci() {
-    for (var i = 0; i < array.length; i++) {
-        sum += array[i];
+function sumFibo(n) {
+    for (i = 0; i <= n; i++) {
+        sum += fibo(i);
     }
+    return sum;
 }
-getFibonacci();
-sumFibonacci();
+console.log(sumFibo(20));

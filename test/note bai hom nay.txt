@@ -1,0 +1,8 @@
+đáp ứng OOP:1.Liên kết:đối tượng tham chiếu đối tượng
+2.tổng hợp:đối tượng nhúng một hoặc nhiều đối tượng độc lập khác
+3.thành phần:đối tượng nhúng một hoặc nhiều đối tượng phụ thuộc
+*đáp ứng:1.Tính đóng gói:tập trung vào một dữ liệu và mã điều khiển, che giấu chi tiết bên trong
+2.tính kế thừa:đối tượng có tính năng từ đối tượng khác
+3.tính đa hình:khả năng xử lý đối tượng khác nhau dựa trên kiểu dữ liệu và cấu trúc
+
+JS là nn lập trình OOP nguyên mẫu

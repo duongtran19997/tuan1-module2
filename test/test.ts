@@ -1,25 +1,37 @@
-// @errors: 2540
-
-interface SomeType {
+function Person(_age, _name){
 
 
-    readonly prop: string;
+    this.age = _age;
+
+
+    this.name = _name;
 
 
 }
 
 
-function doSomething(obj: SomeType) {
+// Thêm thuộc tính vào thuộc tính prototype của hàm khởi tạo
 
 
-    // Chúng ta có thể đọc giá trị từ thuộc tính 'obj.prop'.
+Person.prototype.height = 0;
 
 
-    console.log(`prop has the value '${obj.prop}'.`);
+//Tạo ra 1 đối tượng của Person, có cả 3 thuộc tính của mẫu khởi tạo Person
 
 
-    // Nhưng chúng ta không thể gán lại giá trị.
+let codegym = new Person(10, "CodeGym");
 
 
-    // obj.prop = "hello";
+for (let prop in codegym){
+
+
+    console.log(prop);
+
+
 }
+
+
+//Xem đối tượng prototype của instance vừa tạo
+
+
+codegym.__proto__;
