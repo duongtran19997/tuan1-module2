@@ -3,8 +3,8 @@ var array = [];
 var i = 0;
 while (i < 11) {
     if (number.indexOf(i) === -1) {
-        i++;
         array.push(i);
+        i++;
     }
     else {
         i++;
