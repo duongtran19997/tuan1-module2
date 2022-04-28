@@ -16,13 +16,13 @@ export class BookManager {
     }
 
     findBook(id: string) {
-        let i = null
-        this.books.forEach((book, index) => {
-            if (book.id == id) {
+        let i = -1
+        this.books.forEach((book,index) => {
+            if (book.id === id) {
                 i = index;
             }
-            return i;
         })
+        return i;
     }
 
     fixName(id: string, name: string): void { //đang lỗi không chạy, vấn đề ở chỗ findBook

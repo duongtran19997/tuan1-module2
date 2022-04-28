@@ -13,13 +13,13 @@ var BookManager = /** @class */ (function () {
         return this.books;
     };
     BookManager.prototype.findBook = function (id) {
-        var i = null;
+        var i = -1;
         this.books.forEach(function (book, index) {
-            if (book.id == id) {
+            if (book.id === id) {
                 i = index;
             }
-            return i;
         });
+        return i;
     };
     BookManager.prototype.fixName = function (id, name) {
         var bookUpdate = +this.findBook(id);

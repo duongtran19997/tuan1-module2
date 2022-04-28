@@ -11,6 +11,6 @@ bookManager1.addBook(book1);
 bookManager1.addBook(book2);
 bookManager1.addBook(book3);
 bookManager1.addBook(book4);
-// bookManager1.fixName('3334','MasterChef')
-// console.log(bookManager1.getList());
-bookManager1.findBook('4434');
+bookManager1.fixName('3334', 'MasterChef');
+console.log(bookManager1.getList());
+console.log(bookManager1.findBook('4953'));
