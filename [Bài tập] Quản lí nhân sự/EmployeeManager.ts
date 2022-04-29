@@ -13,7 +13,8 @@ export class EmployeeManager{
         EmployeeManager.List.splice(EmployeeManager.List.indexOf(employee))
     }
     static fixEmployee(employee:Employee,{name,address,position}){
-        //sự khác biệt của có ngoặc và không ngoặc
+        //sự khác biệt của có ngoặc và không ngoặc trong tham số của method
+        // destructuring
         employee.setName(name);
         employee.setAddress(address);
         // employee.setBirthday(birthday);

@@ -15,7 +15,8 @@ var EmployeeManager = /** @class */ (function () {
     };
     EmployeeManager.fixEmployee = function (employee, _a) {
         var name = _a.name, address = _a.address, position = _a.position;
-        //sự khác biệt của có ngoặc và không ngoặc
+        //sự khác biệt của có ngoặc và không ngoặc trong tham số của method
+        // destructuring
         employee.setName(name);
         employee.setAddress(address);
         // employee.setBirthday(birthday);
