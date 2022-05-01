@@ -4,7 +4,7 @@ exports.Employee = void 0;
 var Employee = /** @class */ (function () {
     function Employee(name, birthday, address, position) {
         this.name = name;
-        this.birthDay = birthday;
+        this.birthDay = birthday.toDateString();
         this.address = address;
         this.position = position;
     }

@@ -1,11 +1,11 @@
 export class Employee{
     private name:string;
-    private birthDay:Date;
+    private birthDay:string;
     private address:string;
     private position:string;
     constructor(name:string,birthday:Date,address:string,position:string) {
         this.name=name;
-        this.birthDay=birthday;
+        this.birthDay=birthday.toDateString();
         this.address=address;
         this.position=position;
     }
